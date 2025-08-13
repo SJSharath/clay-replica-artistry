@@ -7,6 +7,13 @@ import shreyansImage from "@/assets/mentor-shreyans.jpg";
 import dyumnaImage from "@/assets/mentor-dyumna.jpg";
 import markImage from "@/assets/mentor-mark.jpg";
 import chandanImage from "@/assets/mentor-chandan.jpg";
+import aditiImage from "@/assets/mentor-aditi.png";
+import aryamanImage from "@/assets/mentor-aryaman.png";
+import sydneyImage from "@/assets/mentor-sydney.png";
+import filipposImage from "@/assets/mentor-filippos.png";
+import shivenImage from "@/assets/mentor-shiven.jpeg";
+import anoushkaImage from "@/assets/mentor-anoushka.png";
+import shlokaImage from "@/assets/mentor-shloka.png";
 
 interface MentorProfileProps {
   name: string;
@@ -31,19 +38,44 @@ function MentorProfile({ name, description, image }: MentorProfileProps) {
 export function MentorShowcase() {
   const collegeMentors = [
     {
+      name: "Aditi Gaur",
+      description: "Helps you apply to Stanford",
+      image: aditiImage
+    },
+    {
+      name: "Aryaman Roongta", 
+      description: "Helps you apply to Cornell",
+      image: aryamanImage
+    },
+    {
       name: "Hafsa Sheikh",
       description: "Helps you apply to Princeton",
       image: hafsaImage
     },
     {
-      name: "Aryaman Roongta", 
-      description: "Helps you apply to Cornell",
-      image: karthikImage
-    },
-    {
       name: "Sydney Wiredu",
       description: "Helps you apply to Harvard", 
-      image: shreyansImage
+      image: sydneyImage
+    },
+    {
+      name: "Filippos Akylas Kaloudis",
+      description: "Helps you apply to Imperial",
+      image: filipposImage
+    },
+    {
+      name: "Shiven Chambial",
+      description: "Helps you apply to UC Berkeley",
+      image: shivenImage
+    },
+    {
+      name: "Anoushka Parmeshwaran",
+      description: "Helps you apply to London School of Economics",
+      image: anoushkaImage
+    },
+    {
+      name: "Shloka Ashok",
+      description: "Helps you apply to University of Southern California",
+      image: shlokaImage
     }
   ];
 
@@ -92,7 +124,7 @@ export function MentorShowcase() {
           </TabsList>
           
           <TabsContent value="college">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
               {collegeMentors.map((mentor, index) => (
                 <MentorProfile key={index} {...mentor} />
               ))}
@@ -100,7 +132,7 @@ export function MentorShowcase() {
           </TabsContent>
           
           <TabsContent value="passion">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
               {passionMentors.map((mentor, index) => (
                 <MentorProfile key={index} {...mentor} />
               ))}

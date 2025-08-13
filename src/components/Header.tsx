@@ -17,10 +17,13 @@ export function Header() {
             Browse mentors
           </a>
           <a href="#community" className="text-foreground hover:text-primary transition-colors">
-            Join Community
+            Ivy 10
           </a>
           <a href="#call" className="text-foreground hover:text-primary transition-colors">
             Book a Call
+          </a>
+          <a href="#community" className="text-foreground hover:text-primary transition-colors">
+            Join Community
           </a>
         </nav>
 

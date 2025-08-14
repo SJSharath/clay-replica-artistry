@@ -13,16 +13,16 @@ export function Header() {
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#browse" className="text-foreground hover:text-primary transition-colors">
+          <a href="/browse-mentors" className="text-foreground hover:text-primary transition-colors">
             Browse mentors
           </a>
-          <a href="#community" className="text-foreground hover:text-primary transition-colors">
+          <a href="/ivy-10" className="text-foreground hover:text-primary transition-colors">
             Ivy 10
           </a>
           <a href="#call" className="text-foreground hover:text-primary transition-colors">
             Book a Call
           </a>
-          <a href="#community" className="text-foreground hover:text-primary transition-colors">
+          <a href="/community" className="text-foreground hover:text-primary transition-colors">
             Join Community
           </a>
         </nav>
